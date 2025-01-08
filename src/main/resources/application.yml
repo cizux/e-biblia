@@ -1,0 +1,31 @@
+# Server
+server:
+    port: 9090
+
+spring:
+    application:
+        name: ebiblia
+        
+# Database connection postgresql
+    datasource:
+        url: jdbc:postgresql://localhost:5432/ebiblia
+        username: postgres
+        password:
+
+
+# Hibernate
+    jpa:
+        properties:
+            hibernate:
+                dialect: 
+                    org:
+                        hibernate:
+                            dialect: PostgreSQLDialect
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+
+
+
+
+
